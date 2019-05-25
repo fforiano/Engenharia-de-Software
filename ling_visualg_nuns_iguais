@@ -1,0 +1,26 @@
+algoritmo "numeros_iguais"
+
+var
+   n1,n2,n3:inteiro
+inicio
+
+escreva("Digite o primeiro, o segundo e o terceiro número:")
+leia(n1,n2,n3)
+              se(n1=n2)entao
+                            se(n2=n3)entao
+                            escreva("Todos os números são iguais ",n1,",",n2," e",n3,".")
+                            senao
+                            escreva("Dois números iguais ",n1, " e ",n2, ".")
+                            fimse
+              senao
+                    se(n1=n3)entao
+                    escreva("Dois números iguais ",n1, " e ",n3, ".")
+                    senao
+                         se(n2=n3)entao
+                         escreva("Dois números iguais ",n2, " e ",n3, ".")
+                         senao
+                         escreva("Nenhum número igual.")
+                         fimse
+                    fimse
+fimse
+fimalgoritmo
