@@ -15,4 +15,5 @@ caso 10
      escreva("O número é igual a 10.")
 outrocaso
          escreva("O número digitado não é compativel.")
+         
 fimescolha
