@@ -1,0 +1,18 @@
+algoritmo "igual_1_5_10"
+
+var
+   valor:inteiro
+inicio
+
+escreval("Digite um número que seja 1, 5 ou 10:")
+leia(valor)
+ESCOLHA <valor>
+caso 1
+     escreva("O número é igual a 1.")
+caso 5
+     escreva("O número é igual a 5.")
+caso 10
+     escreva("O número é igual a 10.")
+outrocaso
+         escreva("O número digitado não é compativel.")
+fimescolha
