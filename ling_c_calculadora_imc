@@ -1,5 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<locale.h>
+setlocale(LC_ALL, "portuguese");
+
 int main(){
 char nm [20];
 float p,h,imc;
