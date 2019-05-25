@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+char nm [20];
+float p,h,imc;
+
+printf ("Digite seu nome: \n");
+scanf ("%s",nm);
+while((getchar())!='\n');
+
+printf ("Digite seu peso: \n");
+scanf ("%f",&p);
+while((getchar())!='\n');
+printf ("Digite sua altura: \n");
+scanf ("%f",&h);
+
+
+imc=p/(h*h);
+
+if(imc<17){
+printf("%s você está muito abaixo do peso.",nm);}
+if(imc>17&&imc<18.49){
+printf("%s você está abaixo do peso.",nm);}
+if(imc>=18.5&&imc<25){
+printf("%s parabéns, você está no peso ideal.",nm);}
+if(imc>=25&&imc<30){
+printf("%s você está acima do peso ideal.",nm);}
+if(imc>=30){
+printf("%s cuidado, você está obeso(a).",nm);}
+
+return 0; 
+}
