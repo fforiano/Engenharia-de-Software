@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+int cod;
+float preco;
+
+printf("Entre com o código: ");
+scanf("%d",&cod);
+printf("Entre com o preço: ");
+scanf("%f",&preco);
+
+switch(cod)
+{
+	case 1:
+		printf("O valor é de %.2f e a origem é do Sul.",preco);
+		break;
+	case 2:
+		printf("O valor é de %.2f e a origem é do Norte.",preco);
+		break;
+	case 3:
+		printf("O valor é de %.2f e a origem é do Leste.",preco);
+		break;
+	case 4:
+		printf("O valor é de %.2f e a origem é do Oeste.",preco);
+		break;
+	case 5:
+	case 6:
+		printf("O valor é de %.2f e a origem é do Nordeste.",preco);
+		break;
+	default:
+		printf("O valor é de %.2f e a origem é Importada.",preco);	
+}
+return 0; 
+}
