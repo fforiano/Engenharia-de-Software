@@ -1,0 +1,27 @@
+algoritmo "codigo_origem"
+var
+
+cod:inteiro
+preco:real
+
+inicio
+
+escreva("Entre com o código de origem: ")
+leia(cod)
+escreva("Entre com o preço do produto: ")
+leia(preco)
+escolha <cod>
+         caso 1
+              escreva("Valor de R$",preco," - O produto é do Sul.")
+         caso 2
+              escreva("Valor de R$",preco," - O produto é do Norte.")
+         caso 3
+              escreva("Valor de R$",preco," - O produto é do Leste.")
+         caso 4
+              escreva("Valor de R$",preco," - O produto é do Oeste.")
+         caso 5 ,6
+              escreva("Valor de R$",preco," - O produto é do Nordeste.")
+         outrocaso
+              escreva("Valor de R$",preco," - O produto é importado.")
+fimescolha
+fimalgoritmo
