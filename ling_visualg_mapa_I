@@ -1,0 +1,68 @@
+algoritmo "mapa_log_I"
+
+var
+
+matriz: vetor[0..6, 0..6] de caractere
+l,c,opcao:inteiro
+nm: caractere
+   
+inicio
+
+
+   escreva("Qual seu nome? ")
+   leia (nm)
+   
+ // menu de escolha
+ 
+   enquanto opcao <> 4 faca
+   escreval(nm," digite a opção: ")
+   escreval("(1) Preencher tabuleiro [x]")
+   escreval("(2) Receber parâmetros")
+   escreval("(3) Exibir tabuleiro")
+   escreval("(4) Sair")
+   escreva("----> ")
+   leia(opcao)
+
+   enquanto opcao <> 4 faca
+
+            escolha opcao
+                caso 1
+                
+// funcao para preencher com x todos os campos
+
+                para l de 0 ate 5 passo 1 faca
+                para c de 0 ate 5 passo 1 faca
+                     matriz[l,c] <- "[X]"
+                     fimpara
+                fimpara
+
+                caso 2
+                           escreval(2)
+ // retorna tabuleiro
+ 
+                caso 3
+                           para l de 0 ate 5 passo 1 faca
+                           para c de 0 ate 5 passo 1 faca
+                                escreva(matriz[l,c])
+                           fimpara
+                                escreval(" ")
+                           fimpara
+                caso 4
+                           escreval(4)
+                           
+                outrocaso
+                         escreval (nm," escolha uma opção válida!")
+                     
+             fimescolha
+
+      escreval(nm," digite a opção: ")
+      escreval("(1) Preencher tabuleiro [x]")
+      escreval("(2) Receber parâmetros")
+      escreval("(3) Exibir tabuleiro")
+      escreval("(4) Sair")
+      escreva("----> ")
+      leia(opcao)
+
+   fimenquanto
+              escreva("Finalizado")
+fimalgoritmo
