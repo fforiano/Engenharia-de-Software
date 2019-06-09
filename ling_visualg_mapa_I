@@ -5,22 +5,31 @@ var
 matriz: vetor[0..5, 0..5] de caractere
 l,c,opcao:inteiro
 nm: caractere
-   
+
 inicio
 
-
-   escreva("Qual seu nome? ")
+   escreval("************************")
+   escreval("Qual seu nome? ")
+   escreval("************************")
+   escreval("")
    leia (nm)
-   
+
  // menu de escolha
- 
+
    enquanto opcao <> 4 faca
-   escreval(nm," digite a opção: ")
+   escreval("")
+   escreval("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+   escreval("            OPÇÕES             ")
+   escreval("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+   escreval("")
+   escreval(nm," digite sua opção: ")
+   escreval("")
    escreval("(1) Preencher tabuleiro [x]")
    escreval("(2) Receber parâmetros")
    escreval("(3) Exibir tabuleiro")
    escreval("(4) Sair")
-   escreva("----> ")
+   escreval("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+   escreval("")
    leia(opcao)
 
    enquanto opcao <> 4 faca
@@ -65,20 +74,33 @@ inicio
                 		fimpara
                             escreval(" ")
                 	fimpara
-                           
+
                 outrocaso
                          escreval (nm," escolha uma opção válida!")
-                     
-             fimescolha
 
+             fimescolha
+      escreval("")
+      escreval("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+      escreval("            OPÇÕES             ")
+      escreval("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+      escreval("")
       escreval(nm," digite a opção: ")
+      escreval("")
       escreval("(1) Preencher tabuleiro [x]")
       escreval("(2) Receber parâmetros")
       escreval("(3) Exibir tabuleiro")
       escreval("(4) Sair")
-      escreva("----> ")
+      escreval("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+      escreval("")
+
+
       leia(opcao)
+
    fimenquanto
    fimenquanto
-        escreva("Sistema finalizado, volte sempre ",nm,".")
+        escreval("")
+        escreval("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+        escreval("Sistema finalizado, volte sempre ",nm,".")
+        escreval("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+        escreval("")
 fimalgoritmo
